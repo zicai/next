@@ -4,6 +4,11 @@
             <div class="task-list-title">
                 重要&紧急
             </div>
+            <form class="pure-form form-create-task">
+                <input class="hidden" type="text" name="type" value="tl"/>
+                <input class="pure-input-1" name="name" type="text"/>
+                <button class="hidden" type="submit"></button>
+            </form>
             <ul class="task-list">
                 {{#each taskListTL}}
                     <li>{{name}}</li>
@@ -14,6 +19,11 @@
             <div class="task-list-title">
                 重要&不紧急
             </div>
+            <form class="pure-form form-create-task">
+                <input class="hidden" type="text" name="type" value="tr"/>
+                <input class="pure-input-1" name="name" type="text"/>
+                <button class="hidden" type="submit"></button>
+            </form>
             <ul class="task-list">
                 {{#each taskListTR}}
                     <li>{{name}}</li>
@@ -24,6 +34,11 @@
             <div class="task-list-title">
                 不重要&紧急
             </div>
+            <form class="pure-form form-create-task">
+                <input class="hidden" type="text" name="type" value="bl"/>
+                <input class="pure-input-1" name="name" type="text"/>
+                <button class="hidden" type="submit"></button>
+            </form>
             <ul class="task-list">
                 {{#each taskListBL}}
                     <li>{{name}}</li>
@@ -34,6 +49,11 @@
             <div class="task-list-title">
                 不重要&不紧急
             </div>
+            <form class="pure-form form-create-task">
+                <input class="hidden" type="text" name="type" value="br"/>
+                <input class="pure-input-1" name="name" type="text"/>
+                <button class="hidden" type="submit"></button>
+            </form>
             <ul class="task-list">
                 {{#each taskListBR}}
                     <li>{{name}}</li>
