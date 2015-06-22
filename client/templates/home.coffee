@@ -27,3 +27,12 @@ Template.home.events
       when 'bl' then task.urgent = true
     Task.insert(task)
     $form.find('input[name=name]').val('')
+
+  'keypress .task-name': (e)->
+    $el = $(e.currentTarget)
+    taskId = $el.parent().attr('data-task-id')
+    if e.keyCode is 13
+      taskName = $el.text()
+      Task.update({_id: taskId}, {$set: {name: taskName}})
+      $el.blur()
+      e.preventDefault()

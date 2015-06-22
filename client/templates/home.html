@@ -11,7 +11,9 @@
             </form>
             <ul class="task-list">
                 {{#each taskListTL}}
-                    <li>{{name}}</li>
+                    <li class="task-item" data-task-id="{{_id}}">
+                        <div class="task-name" contenteditable="true">{{name}}</div>
+                    </li>
                 {{/each}}
             </ul>
         </div>
@@ -26,7 +28,9 @@
             </form>
             <ul class="task-list">
                 {{#each taskListTR}}
-                    <li>{{name}}</li>
+                    <li class="task-item" data-task-id="{{_id}}">
+                        <div class="task-name" contenteditable="true">{{name}}</div>
+                    </li>
                 {{/each}}
             </ul>
         </div>
@@ -41,7 +45,9 @@
             </form>
             <ul class="task-list">
                 {{#each taskListBL}}
-                    <li>{{name}}</li>
+                    <li class="task-item" data-task-id="{{_id}}">
+                        <div class="task-name" contenteditable="true">{{name}}</div>
+                    </li>
                 {{/each}}
             </ul>
         </div>
@@ -56,7 +62,9 @@
             </form>
             <ul class="task-list">
                 {{#each taskListBR}}
-                    <li>{{name}}</li>
+                    <li class="task-item" data-task-id="{{_id}}">
+                        <div class="task-name" contenteditable="true">{{name}}</div>
+                    </li>
                 {{/each}}
             </ul>
         </div>
