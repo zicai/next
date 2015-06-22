@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+}
+
+.main-container {
+    height: 100%;
+}
+
+.task-list-wrapper {
+    height: 50%;
+}
+
+.task-list-wrapper-tl {
+    background-color: #ffaeae;
+}
+
+.task-list-wrapper-tr {
+    background-color: #56baec;
+}
+
+.task-list-wrapper-bl {
+    background-color: #ffec94;
+}
+
+.task-list-wrapper-br {
+    background-color: #b4d8e7;
+}

@@ -1,5 +1,44 @@
 <template name="home">
-    {{#each taskList}}
-        {{name}}
-    {{/each}}
+    <div class="pure-g main-container">
+        <div class="pure-u-1-2 task-list-wrapper task-list-wrapper-tl">
+            <div class="task-list-title">
+                重要&紧急
+            </div>
+            <ul class="task-list">
+                {{#each taskListTL}}
+                    <li>{{name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="pure-u-1-2 task-list-wrapper  task-list-wrapper-tr">
+            <div class="task-list-title">
+                重要&不紧急
+            </div>
+            <ul class="task-list">
+                {{#each taskListTR}}
+                    <li>{{name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="pure-u-1-2 task-list-wrapper  task-list-wrapper-bl">
+            <div class="task-list-title">
+                不重要&紧急
+            </div>
+            <ul class="task-list">
+                {{#each taskListBL}}
+                    <li>{{name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="pure-u-1-2 task-list-wrapper  task-list-wrapper-br">
+            <div class="task-list-title">
+                不重要&不紧急
+            </div>
+            <ul class="task-list">
+                {{#each taskListBR}}
+                    <li>{{name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
 </template>
