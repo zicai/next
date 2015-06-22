@@ -25,3 +25,19 @@ html, body {
 .task-list-wrapper-br {
     background-color: #b4d8e7;
 }
+
+.task-item {
+    position: relative;
+    line-height: 25px;
+}
+
+.delete-task {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.delete-task:hover {
+    color: #dd3023;
+}

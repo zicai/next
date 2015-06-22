@@ -36,3 +36,8 @@ Template.home.events
       Task.update({_id: taskId}, {$set: {name: taskName}})
       $el.blur()
       e.preventDefault()
+
+  'click .delete-task': (e)->
+    $el = $(e.currentTarget)
+    taskId = $el.parent().attr('data-task-id')
+    Task.remove({_id: taskId})
