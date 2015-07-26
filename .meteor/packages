@@ -8,3 +8,5 @@ meteor-platform
 insecure
 iron:router
 coffeescript
+accounts-github
+accounts-ui
