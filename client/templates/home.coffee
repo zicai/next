@@ -17,6 +17,7 @@ Template.home.events
       create_time: new Date()
       important: false
       urgent: false
+      user_id: Meteor.userId()
     type = $form.find('input[name=type]').val()
 
     switch type

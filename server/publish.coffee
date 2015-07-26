@@ -1,3 +1,3 @@
 Meteor.publish('tasks', ->
-  Task.find()
+  Task.find({user_id: @userId})
 )
