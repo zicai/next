@@ -9,9 +9,9 @@
                 <input class="pure-input-1" name="name" type="text"/>
                 <button class="hidden" type="submit"></button>
             </form>
-            <ul class="task-list">
+            <ul class="task-list" data-task-important="true" data-task-urgent="true">
                 {{#each taskListTL}}
-                    <li class="task-item" data-task-id="{{_id}}">
+                    <li class="task-item" data-task-id="{{_id}}" data-task-order="{{order}}">
                         <div class="task-name" contenteditable="true">{{name}}</div>
                         <span class="delete-task">&times;</span>
                     </li>
@@ -27,9 +27,9 @@
                 <input class="pure-input-1" name="name" type="text"/>
                 <button class="hidden" type="submit"></button>
             </form>
-            <ul class="task-list">
+            <ul class="task-list" data-task-important="true" data-task-urgent="false">
                 {{#each taskListTR}}
-                    <li class="task-item" data-task-id="{{_id}}">
+                    <li class="task-item" data-task-id="{{_id}}" data-task-order="{{order}}">
                         <div class="task-name" contenteditable="true">{{name}}</div>
                         <span class="delete-task">&times;</span>
                     </li>
@@ -45,9 +45,9 @@
                 <input class="pure-input-1" name="name" type="text"/>
                 <button class="hidden" type="submit"></button>
             </form>
-            <ul class="task-list">
+            <ul class="task-list" data-task-important="false" data-task-urgent="true">
                 {{#each taskListBL}}
-                    <li class="task-item" data-task-id="{{_id}}">
+                    <li class="task-item" data-task-id="{{_id}}" data-task-order="{{order}}">
                         <div class="task-name" contenteditable="true">{{name}}</div>
                         <span class="delete-task">&times;</span>
                     </li>
@@ -63,9 +63,9 @@
                 <input class="pure-input-1" name="name" type="text"/>
                 <button class="hidden" type="submit"></button>
             </form>
-            <ul class="task-list">
+            <ul class="task-list" data-task-important="false" data-task-urgent="false">
                 {{#each taskListBR}}
-                    <li class="task-item" data-task-id="{{_id}}">
+                    <li class="task-item" data-task-id="{{_id}}" data-task-order="{{order}}">
                         <div class="task-name" contenteditable="true">{{name}}</div>
                         <span class="delete-task">&times;</span>
                     </li>

@@ -10,20 +10,27 @@ html, body {
     height: 50%;
 }
 
+.task-list {
+    height: 300px;
+    /*background-color: #eee;*/
+    margin: 0;
+    overflow: auto;
+}
+
 .task-list-wrapper-tl {
-    background-color: #ffaeae;
+background-color: #ffaeae;
 }
 
 .task-list-wrapper-tr {
-    background-color: #56baec;
+background-color: #56baec;
 }
 
 .task-list-wrapper-bl {
-    background-color: #ffec94;
+background-color: #ffec94;
 }
 
 .task-list-wrapper-br {
-    background-color: #b4d8e7;
+background-color: #b4d8e7;
 }
 
 .task-item {
